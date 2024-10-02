@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(1668170513-R8Sc7ZLKy_md.jpg);
+    background-size: cover;
+    filter: brightness(0.4) blur(2px);
+}
+
+.login-box {
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(rgba(206, 207, 206, 0.85), rgba(206, 207, 206, 0.2));
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px auto; /* This will center the div horizontally */
+    position: absolute; /* This will allow us to position the div absolutely */
+    top: 50%; /* This will move the div 50% down from the top of the page */
+    left: 50%; /* This will move the div 50% from the left of the page */
+    transform: translate(-50%, -50%); /* This will move the div back up and to the left by half of its own width and height, effectively centering it */
+    box-shadow: 20px;
+    text-align: center;
+}
+
+input[type="email"], input[type="password"] {
+    width: 250px; /* Increase the width of the input fields */
+    height: 20px; /* Increase the height of the input fields */
+    padding: 10px; /* Add some padding to make the input fields more comfortable to type in */
+    border: 1px solid #ccc; /* Add a border to the input fields */
+    border-radius: 10px; /* Round the corners of the input fields */
+    font-size: 16px; /* Increase the font size of the input fields */
+  }
+  
+  input[type="checkbox"] {
+    width: 20px; /* Make the checkbox a bit larger */
+    height: 20px; /* Make the checkbox a bit larger */
+    margin: 10px; /* Add some margin to the checkbox */
+  }
+  
+  input[type="submit"] {
+    width: 100px; /* Make the submit button a bit wider */
+    height: 30px; /* Make the submit button a bit taller */
+    border: none; /* Remove the border from the submit button */
+    border-radius: 10px; /* Round the corners of the submit button */
+    background-color: #67c96a91; /* Add a green background color to the submit button */
+    color: #fff; /* Make the text color of the submit button white */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the submit button */
+  }
