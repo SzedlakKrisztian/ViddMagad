@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-  <title>Bérek és bónuszok</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViddMagad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark c">
-    <a class="navbar-brand" href="#">ViddMagad</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="https://szedlakkrisztian.github.io/ViddMagad/map/indexxx.html">Munkák</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://szedlakkrisztian.github.io/ViddMagad/ber/berezes.html">Bónusz/Bér</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Profil
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/profil/index.html">My Profile</a>
-                    <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/logout/index.html">Logout</a>
-                    <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/info/index.html">Több infó</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark c">
+        <a class="navbar-brand" href="https://szedlakkrisztian.github.io/ViddMagad/fooldal/index.html">ViddMagad</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="https://szedlakkrisztian.github.io/ViddMagad/munka/munkak.html">Munkák</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://szedlakkrisztian.github.io/ViddMagad/ber/berezes.html">Bérezés/Bónusz</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profil
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/profil/index.html">My Profile</a>
+                        <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/logout/index.html">Logout</a>
+                        <a class="dropdown-item" href="https://szedlakkrisztian.github.io/ViddMagad/info/index.html">Több infó</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="container-fluid">
-    <div class="left-section">
-      <ul class="berek">
-        <li class="centered">
-          <button onclick="berekMutatasa()">Bérek</button>
-          <button onclick="bonuszokMutatasa()">Bónuszok</button>
-        </li>
-        <li class="berekesbonuszok">
-          <div class="leiras">
-              <p id="1">Pici csomag (10 cm x 10 cm x 10 cm)</p>
+    <div class="container-fluid">
+        <div class="left-section">
+          <ul class="berek">
+            <li class="centered">
+              <button onclick="berekMutatasa()">Bérek</button>
+              <button onclick="bonuszokMutatasa()">Bónuszok</button>
+            </li>
+            <li class="berekesbonuszok">
+              <div class="leiras">
+                  <p id="1">Pici csomag (10 cm x 10 cm x 10 cm)</p>
+              </div>
+              <div class="ber">
+                  <p id="6">90 Ft</p>
+              </div>
+            </li>
+            <li class="berekesbonuszok">
+              <div class="leiras">
+                  <p id="2">Kis csomag (30 cm x 30 cm x 30 cm)</p>
+              </div>
+              <div class="berekesbonuszok">
+                  <p id="7">210 Ft</p>
+              </div>
+            </li>
+            <li class="berekesbonuszok">
+              <div class="leiras">
+                  <p id="3">Közepes csomag (45 cm x 45 cm x 45 cm)</p>
+              </div>
+              <div class="ber">
+                  <p id="8">330 Ft</p>
+              </div>
+            </li>
+            <li class="berekesbonuszok">
+              <div class="leiras">
+                  <p id="4">Nagy csomag (60 cm x 60 cm x 60 cm)</p>
+              </div>
+              <div class="ber">
+                  <p id="9">450 Ft</p>
+              </div>
+            </li>
+            <li class="berekesbonuszok">
+              <div class="leiras">
+                  <p id="5">Hatalmas csomag (90 cm x 90 cm x 90 cm)</p>
+              </div>
+              <div class="ber">
+                  <p id="10">570 Ft</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <div class="berek">
+            <li class="centered">
+              <button onclick="csomagHozzaadasa()">Új csomag</button>
+              <button onclick="torolOsszes()">Összes törlése</button>
+            </li>
+            <ul id="csomagLista">
+          </ul>
+            <div class="osszeg"></div>
+            <span>Összeg: - Ft</span>
+            <span> Bónuszok: - %</span>
           </div>
-          <div class="ber">
-              <p id="6">90 Ft</p>
-          </div>
-        </li>
-        <li class="berekesbonuszok">
-          <div class="leiras">
-              <p id="2">Kis csomag (30 cm x 30 cm x 30 cm)</p>
-          </div>
-          <div class="berekesbonuszok">
-              <p id="7">210 Ft</p>
-          </div>
-        </li>
-        <li class="berekesbonuszok">
-          <div class="leiras">
-              <p id="3">Közepes csomag (45 cm x 45 cm x 45 cm)</p>
-          </div>
-          <div class="ber">
-              <p id="8">330 Ft</p>
-          </div>
-        </li>
-        <li class="berekesbonuszok">
-          <div class="leiras">
-              <p id="4">Nagy csomag (60 cm x 60 cm x 60 cm)</p>
-          </div>
-          <div class="ber">
-              <p id="9">450 Ft</p>
-          </div>
-        </li>
-        <li class="berekesbonuszok">
-          <div class="leiras">
-              <p id="5">Hatalmas csomag (90 cm x 90 cm x 90 cm)</p>
-          </div>
-          <div class="ber">
-              <p id="10">570 Ft</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="right-section">
-      <div class="berek">
-        <li class="centered">
-          <button onclick="csomagHozzaadasa()">Új csomag</button>
-          <button onclick="torolOsszes()">Összes törlése</button>
-        </li>
-        <ul id="csomagLista">
-      </ul>
-        <div class="osszeg"></div>
-        <span>Összeg: - Ft</span>
-        <span> Bónuszok: - %</span>
+        </div>
       </div>
-    </div>
-  </div>
-  <script src="berezes.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+      <script src="berezes.js"></script>
+    </body>
 </html>
+    
